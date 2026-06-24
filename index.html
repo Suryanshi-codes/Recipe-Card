@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Recipe Card</title>
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Recipe Card -->
+        <div class="recipe-card">
+
+            <!-- Header -->
+            <div class="recipe-header">
+                <img
+                    src="Chocolate_Cake.png"
+                    alt="Chocolate Cake"
+                    class="recipe-image"
+                />
+
+                <div class="overlay">
+                    <h1>Chocolate Cake</h1>
+                    <p>Soft • Creamy • Delicious</p>
+                </div>
+            </div>
+
+            <!-- Info -->
+            <div class="recipe-info">
+                <div class="info-box">
+                    <h3>⏱ Prep Time</h3>
+                    <p>45 Minutes</p>
+                </div>
+
+                <div class="info-box">
+                    <h3>🍽 Servings</h3>
+                    <p>4 People</p>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button id="toggleIngredients">Show Ingredients</button>
+                <button id="toggleSteps">Show Steps</button>
+                <button id="startCooking">Start Cooking</button>
+                <button onclick="window.print()">Print Recipe</button>
+            </div>
+
+            <!-- Timer -->
+            <div class="timer-section">
+                <h3>⏳ Cooking Timer</h3>
+                <p id="timer">45:00</p>
+            </div>
+
+            <!-- Ingredients -->
+            <div class="section hidden" id="ingredientsSection">
+                <h2>Ingredients</h2>
+
+                <ul class="ingredients-list">
+                    <li>2 cups flour</li>
+                    <li>1 cup sugar</li>
+                    <li>1/2 cup cocoa powder</li>
+                    <li>2 eggs</li>
+                    <li>1 cup milk</li>
+                    <li>1 tsp vanilla essence</li>
+                    <li>1 tsp baking powder</li>
+                    <li>Butter for greasing</li>
+                </ul>
+            </div>
+
+            <!-- Steps -->
+            <div class="section hidden" id="stepsSection">
+                <h2>Instructions</h2>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+
+                <ol class="steps-list" id="stepsList">
+                    <li class="step active-step">
+                        Preheat the oven to 180°C.
+                    </li>
+
+                    <li class="step">
+                        Mix flour, cocoa powder, and baking powder.
+                    </li>
+
+                    <li class="step">
+                        Beat eggs and sugar until fluffy.
+                    </li>
+
+                    <li class="step">
+                        Add milk and vanilla essence.
+                    </li>
+
+                    <li class="step">
+                        Combine wet and dry ingredients.
+                    </li>
+
+                    <li class="step">
+                        Pour batter into greased tray.
+                    </li>
+
+                    <li class="step">
+                        Bake for 30 minutes.
+                    </li>
+
+                    <li class="step">
+                        Cool and serve the chocolate cake.
+                    </li>
+                </ol>
+
+                <button id="nextStep" class="next-btn">
+                    Next Step
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
