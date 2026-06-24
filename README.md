@@ -42,21 +42,19 @@ An interactive and responsive Recipe Card built using **HTML, CSS, and JavaScrip
 - HTML5
 - CSS3
 - JavaScript (ES6)
-
+- 
 ---
 
 ## 📂 Project Structure
 
-```text
 Interactive-Recipe-Card/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── images/
-│   └── recipe-image.jpg
+│   └── Chocolate Cake.png
 └── README.md
-```
 
 ---
 
@@ -73,7 +71,6 @@ The application includes:
 - Responsive design for all screen sizes
 
 ---
-
 
 ## 🎯 Learning Objectives
 
@@ -111,9 +108,3 @@ This project demonstrates:
 | Desktop Screens | ✅ |
 
 ---
-
-
-
----
-
-### 🌟 If you found this project useful, consider giving it a star on GitHub!
